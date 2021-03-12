@@ -1,0 +1,50 @@
+.follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.follow-me p a::before {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #000000;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 30px;
+    height: 44px; /* Button height */
+    line-height: 44px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 44px; /* Button width */
+}
+
+.follow-me p a[href*="facebook.com"]::before {
+    content: "\f09a";
+}
+
+.epsd-insta,
+.item-discription a {
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.epsd-insta:after,
+.item-discription a:after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+.epsd-insta:hover::after,
+.item-discription a:hover::after {
+    transform: scale(1, 1);
+}
