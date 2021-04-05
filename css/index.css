@@ -54,14 +54,17 @@ ul {
 .item {
     margin-left: 40px;
 }
-.slide-down {
+.slide-down,
+.contact-form a {
+    color: #000000;
     text-align: left;
     font-size: 40px;
     margin-bottom: 30px;
     position: relative;
     text-decoration: none;
 }
-.slide-down::after {
+.slide-down::after,
+.contact-form a::after {
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -73,10 +76,12 @@ ul {
     transform-origin: center top;
     transition: transform .5s;
 }
-.slide-down:hover::after {
+.slide-down:hover::after,
+.contact-form a:hover::after {
     transform: scale(1, 1);
 }
-.slide-down {
+.slide-down,
+.contact-form a {
     display: block;
 }
 .item-title {
